@@ -4,6 +4,18 @@
         <title>Objects in JS</title>
     </head>
     <body>
-        
+        <h1>Objects in JS</h1>
+        <p id="demo"></p><!--output-->
+        <script>
+            //create an object
+            var person= {//name of the object
+                firstName: "John",//property1
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+             };
+             //accesing the values fom the object
+             document.getElementById("demo").innerHTML ="My first name is " + person.firstName + ". My last name is " + person.lastName + ". I am " + person.age + " years old. My eye color is " + person.eyeColor + ".";
+        </script>
     </body>
 </html>
