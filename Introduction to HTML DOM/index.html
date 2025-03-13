@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h2 class="text-center">Simple Form Validation</h2>
+            <form class="p-4 shadow rounded bg-light" onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" id="name"
+                    class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="email"
+                    class="form-control" placeholder="Enter your email">
+                </div>
+                <p id="error" class="text-danger"></p>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
